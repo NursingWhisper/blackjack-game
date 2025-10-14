@@ -9,12 +9,13 @@ int main () {
 	int user_cards[MAX_DEALER_CARDS];
 	int dealer_cards[MAX_DEALER_CARDS];
 	char user_input;
-	int user_total = 0;
-	int dealer_total = 0;
 
 	srand(time(NULL));
 
 	do {
+		int user_total = 0;
+		int dealer_total = 0;
+
 		user_cards[0] = rand() % 11 + 1;
 		printf("Your first card is: %d\n", user_cards[0]);
 
